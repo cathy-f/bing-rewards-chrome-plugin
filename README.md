@@ -1,1 +1,0 @@
-# being-rewards-chrome-plugin
