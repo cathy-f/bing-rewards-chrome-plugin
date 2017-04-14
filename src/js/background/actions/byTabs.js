@@ -12,7 +12,6 @@ function newTabAction() {
 		const searchTerm = randomEntry.title;
 
 		if (searchTerm) {
-			console.log('search by tabs', searchTerm)
 			bingSearch(searchTerm);
 		} else {
 			console.error('Error extracting trends search term from', randomEntry);

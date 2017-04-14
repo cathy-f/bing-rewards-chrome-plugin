@@ -2,7 +2,6 @@ function googleSearchAction(details) {
 	const searchTerm = getSearchTerm(details.url);
 
 	if (searchTerm) {
-		console.log('search by google', searchTerm);
 		bingSearch(searchTerm);
 	} else {
 		console.error('Error extracting Google search term from ' + details.url);
