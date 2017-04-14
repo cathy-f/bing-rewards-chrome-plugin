@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+	"name": "Bing Searcher",
+	"description": "This extension perform searches through Bing everytime a new tab is opened.",
+	"version": "1.0",
+	"browser_action": {
+		"default_icon": "src/img/bing-enabled.png",
+		"defailt_title": "Bing Search",
+		"default_popup": "src/popup.html"
+	},
+	"background": {
+		"scripts": [
+			"src/js/background/lib/bingSearcher.js",
+			"src/js/background/lib/googleTrends.js",
+			"src/js/background/actions/bySearch.js",
+			"src/js/background/actions/byTabs.js",
+			"src/js/background/background.js"
+		]
+	},
+	"permissions": [
+		"webRequest",
+		"webNavigation",
+		"tabs",
+		"cookies",
+		"*://www.bing.com/*",
+		"*://trends.google.com/*",
+		"*://www.google.com/*"
+	]
+}
