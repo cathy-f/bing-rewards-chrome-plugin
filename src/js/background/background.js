@@ -88,3 +88,4 @@ chrome.runtime.onMessage.addListener(
 	});
 
 toggleGoogleSearch();
+toggleTrends();
